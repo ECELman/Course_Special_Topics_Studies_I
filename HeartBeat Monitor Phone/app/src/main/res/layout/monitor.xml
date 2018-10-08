@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/Main"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#F3EFEA"
+	android:textColor="#4A7D6B">
+    
+
+<!--   <include android:id="@+id/main1" layout="@layout/contact_list_item" />  -->
+
+
+	<LinearLayout
+	    android:id="@+id/Main3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical|center"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B">
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="請選擇病患"
+	        android:textSize="24sp"
+			android:background="#F3EFEA"
+			android:textColor="#4A7D6B"/>
+	    
+
+
+	    <Button
+	        android:id="@+id/inform"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="40dp"
+	        android:text="詳細資料"
+			android:background="@drawable/button_style"
+			android:textColor="#4A7D6B"/>
+
+
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/Main3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical|center"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B">
+
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_weight="2"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="尚未連結"
+	        android:textSize="18sp"
+			android:background="#F3EFEA"
+			android:textColor="#4A7D6B"/>
+
+	    <Button
+	        android:id="@+id/bth"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="40dp"
+	        android:text="連結裝置"
+			android:background="@drawable/button_style"
+			android:textColor="#4A7D6B"/>
+	    
+	    <Button
+	        android:id="@+id/internet"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="40dp"
+	        android:text="連結網路"
+			android:background="@drawable/button_style"
+			android:textColor="#4A7D6B"/>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/Main3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical|center"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B">
+
+	    
+	    <TextView
+	        android:id="@+id/account"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="尚未同步"
+	        android:textSize="18sp"
+			android:background="#F3EFEA"
+			android:textColor="#4A7D6B"/>
+	    
+	   	<Button
+	        android:id="@+id/synch"
+	        android:layout_weight="1"
+	        android:layout_width="0dip"
+	        android:layout_height="40dp"
+	        android:text="線上同步"
+			android:background="@drawable/button_style"
+			android:textColor="#4A7D6B"/>
+
+	</LinearLayout>
+
+	<heartbeat.monitor.phone.ChartView
+	    android:id="@+id/Chart"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/Max_Y_Axis"
+
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B"
+	    android:keepScreenOn="true"
+	    android:visibility="visible" >
+ 
+	</heartbeat.monitor.phone.ChartView>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="50dip"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B"
+		android:gravity="center_vertical|center"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:id="@+id/linearLayout4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/linearLayout3"
+			android:layout_centerHorizontal="true"
+			android:gravity="center_vertical|center"
+			android:background="#F3EFEA"
+			android:textColor="#4A7D6B">
+
+			<TextView
+				android:id="@+id/IHR_Text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:text="0"
+				android:textSize="26sp"
+				android:background="#F3EFEA"
+				android:textColor="#4A7D6B"></TextView>
+
+			<TextView
+				android:id="@+id/TE_Text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:text="0.0"
+				android:background="#F3EFEA"
+				android:textColor="#FF8800"
+				android:textSize="26sp"></TextView>
+
+			<TextView
+				android:id="@+id/state_word"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:text="狀態："
+				android:textSize="22sp"
+				android:background="#F3EFEA"
+				android:textColor="#4A7D6B"></TextView>
+
+			<TextView
+				android:id="@+id/state"
+				android:layout_width="100dip"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="--"
+				android:background="#F3EFEA"
+				android:textColor="#000088"
+				android:textSize="26sp"></TextView>
+
+			<Button
+				android:id="@+id/simulate"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:text="S"
+				android:background="@drawable/button_style"
+				android:textColor="#4A7D6B"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/Main4"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:orientation="horizontal"
+		android:gravity="center_vertical|center"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B">
+		<Button
+			android:id="@+id/hospital_map"
+            android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:text="醫院搜尋"
+			android:background="@drawable/button_style"
+			android:textColor="#4A7D6B"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="186dp"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:text="病患列表"
+            android:textSize="25sp"
+			android:background="#F3EFEA"
+			android:textColor="#4A7D6B"
+            android:layout_weight="1.47" />
+
+		<Button
+			android:id="@+id/add_patient"
+            android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:text="新增病患"
+			android:background="@drawable/button_style"
+			android:textColor="#4A7D6B"/>
+
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/android:list"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:gravity="center_vertical"
+		android:minHeight="?android:attr/listPreferredItemHeight"
+		android:padding="8dp"
+		android:textSize="24sp"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B">
+	</ListView>
+
+</LinearLayout>
+	

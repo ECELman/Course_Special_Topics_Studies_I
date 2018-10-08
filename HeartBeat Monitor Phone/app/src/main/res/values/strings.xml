@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Main Activity String Define Area-->
+    <string name="app_name">行動智慧健康照護系統</string>
+    
+     <!--  HeartBeat Monitor String Define Area-->
+    <string name="send">發送</string>
+    <string name="not_connected">您尚未與裝置連線</string>
+    <string name="bt_not_enabled_leaving">尚未開啟藍牙，HeartBeat HMM 已關閉</string>
+    <string name="title_connecting">連結中...</string>
+    <string name="title_connected_to">已連結裝置數:</string>
+    <string name="title_not_connected">尚未連結</string>
+    
+    <!-- BMI Activity String Define Area-->
+    <string name="bmi_title">HeartBeatHMM - Bmi 計算</string>
+    <string name="bmi_s_height">身高 (M)</string>
+    <string name="bmi_s_weight">體重(KG)</string>
+    <string name="bmi_s_submit">計算</string>
+    <string name="bmi_s_clear">清除</string>
+    <string name="bmi_s_result">Your BMI is</string>
+    <string name="bmi_s_error">請輸入正確數值</string>
+    <string name="bmi_s_bmirange">提醒您 正常BMI範圍為 18.5~24!</string>
+	<string name="bmi_s_advice_s">您太瘦了!!該多吃一點喔!!^^</string>
+	<string name="bmi_s_advice_m">您的體型適中!!請繼續保持喔!!^^</string>
+	<string name="bmi_s_advice_l">您太胖了!!該減肥且少吃一點喔!!@.@</string>
+	
+	<!-- Hospital String Define Area-->
+	<string name="hospital_title">附近醫院</string>
+	<string name="str_err_location">無法取得位置資訊</string>
+	<string name="str_my_location">目前位置</string>
+	
+    <!-- Quit DiaDialog Confirm String Define Area -->
+    <string name="quit_confirm">您確定要離開此程式嗎?</string>
+    <string name="quit_yes">確定</string>
+    <string name="quit_no">取消</string>
+    
+    <string name="button_login">登入</string>
+    <string name="button_new">新增帳號</string>
+    
+    <!--  DeviceListActivity String Define Area-->
+    <string name="scanning">搜尋可用藍牙裝置中...</string>
+    <string name="select_device">選擇裝置並連線</string>
+    <string name="none_paired">尚無已配對裝置</string>
+    <string name="none_found">未發現可用之藍牙裝置</string>
+    <string name="title_paired_devices">已配對藍牙裝置</string>
+    <string name="title_other_devices">其他可用裝置</string>
+    <string name="button_scan">搜尋可用藍牙裝置</string>
+    
+    <!-- Main Menu String Define Area -->
+    <string name="mmenu_setting">設定</string>
+    <string name="mmenu_quit">離開</string>
+    
+    <!-- Options Menu String Define Area-->
+    <string name="add">新增病患</string>
+    <string name="connect">連結藍牙裝置</string>
+    <string name="discoverable">關於</string>
+    <string name="hospital">附近醫院</string>
+    
+    <!-- About Dialog String Define Area-->
+    <string name="about_title">HeartBeat Monitor Tablet v2.4 final 2013/11/28</string>
+    <string name="about_msg">本程式由Weiting Lin 撰寫於KY_Lab,  由 Shih-Hao Liu 修改於 NUK_CSIE ISP_Lab (v1.5 final),  由 Yan-Jia Chiou 修改於 NUK_CSIE ISP_Lab (v2.4 final)</string>
+    <string name="ok_label">確認</string>
+    
+    <!-- Setting String Define Area -->
+    <string name="setting_title">HeartBeatHMM - Setting</string>
+    <string name="setting_about_programname">HeartBeatHMM v1.5 final</string>
+    <string name="setting_about">本程式由 Shih-Hao Liu 撰寫於 NUK_CSIE ISP_Lab</string>
+    
+    <!-- Userdata String Define Area -->
+    <string name="Userdata_title">HeartBeatHMM - Userdata</string>
+    
+    <!-- Editdialog String Define Area -->
+    <string name="editdia_title">修改使用者資料</string>
+    <string name="editdia_phone">緊急聯絡人電話</string>
+    <string name="editdia_age">使用者年齡</string>
+     <string name="editdia_ip">伺服器IP位置</string>
+    
+    <!-- AlertDialog String Define Area -->
+    <string name="altdia_title">異常警告</string>
+    <string name="altdia_ihr_high">的心跳過快!!</string>
+    <string name="altdia_ihr_low">的心跳過慢!!</string>
+    <string name="altdia_bt_high">的體溫過高!!</string>
+    <string name="altdia_LBBB">的左束分支阻斷(LBBB)!!</string>
+    <string name="altdia_RBBB">的右束分支阻斷(RBBB)!!</string>
+    <string name="altdia_VPC">的心室過早收縮(VPC)!!</string>
+    <string name="altdia_APC">的心房過早收縮(APC)!!</string>
+    <string name="altdia_sendsms1">請按下確定鍵解除警報</string>
+    <string name="altdia_sendsms2">傳送警告簡訊倒數</string>
+    <string name="altdia_sms_message1">警告!!  病患</string>
+    <string name="altdia_sms_message2">請多加注意並做相關必要處理  謝謝</string> 
+
+	 <string name="button_add_contact">Add Contact</string>
+	 <string name="button_save_contact">儲存</string>
+	 <string name="menuitem_edit_contact">編輯資料</string>
+	 <string name="menuitem_delete_contact">刪除這位病患</string>
+	 <string name="address">Address</string>
+	 <string name="hint_name">姓名</string>
+	 <string name="hint_email">E-Mail</string>
+	 <string name="hint_phone">電話</string>
+	 <string name="hint_smsphone_1">緊急聯絡人1電話</string>
+	 <string name="hint_smsphone_2">緊急聯絡人2電話</string>
+	 <string name="hint_smsphone_3">緊急聯絡人3電話</string>
+	 <string name="hint_address">地址</string>
+	 <string name="hint_note">備註</string>
+	 
+	 <string name="hint_username">帳號</string>
+	 <string name="hint_password">密碼</string>
+	 <string name="hint_pin">存取PIN碼</string>
+	 
+	 <string name="label_name">姓名:</string>
+	 <string name="label_email">E-Mail:</string>
+	 <string name="label_phone">電話:</string>
+	 <string name="label_smsphone_1">緊急聯絡人1電話:</string>
+	 <string name="label_smsphone_2">緊急聯絡人2電話:</string>
+	 <string name="label_smsphone_3">緊急聯絡人3電話:</string>
+	 <string name="label_address">地址:</string>
+	 <string name="label_note">備註:</string>
+	 <string name="confirmTitle">您確定嗎?</string>
+	 <string name="confirmMessage">
+	    這樣會永久刪除這位病患的所有資料</string>
+	 <string name="errorButton">確定</string>
+	 <string name="errorTitle">姓名欄位為空</string>
+	 <string name="errorMessage">你至少必須輸入姓名</string>
+	 <string name="errorTitle2">欄位為空</string>
+	 <string name="errorMessage2">你必須輸入每個欄位以登入到Server</string>
+	 <string name="errorMessage3">你必須輸入每個欄位以連結病患</string>
+	 <string name="errorMessage4">你必須輸入每個欄位以新增一個帳號</string>
+	 
+	 <string name="button_cancel">取消</string>
+	 <string name="button_delete">刪除</string>
+	 <string name="button_create">新增帳號</string>   
+   
+	 <string name="synch_login">登入</string>
+	 <string name="button_send">送出</string>
+	 <string name="connect_internet">連結網路</string>
+	 <string name="create_account">新增帳號</string>
+	 
+	 <string name="simulate_title">模擬訊號選項</string>
+</resources>

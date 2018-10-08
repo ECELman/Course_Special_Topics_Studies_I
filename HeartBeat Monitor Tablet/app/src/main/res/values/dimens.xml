@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="drag_item_normal_height">64dip</dimen>
+    <dimen name="drag_item_expand_height">128dip</dimen>
+    <dimen name="list_width">256dip</dimen>
+    <dimen name="Max_X_Axis">492px</dimen>
+	<dimen name="Max_Y_Axis">180px</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/list_width"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+    android:paddingLeft="10dip"
+    android:background="#F3EFEA"
+    android:textColor="#4A7D6B">
+    <TextView
+       android:id="@+id/drag_list_item_text"
+       android:layout_width="@dimen/list_width"
+       android:layout_height="40dp"
+       android:textSize="20sp"
+       android:gravity="center_vertical|center"
+        android:background="#F3EFEA"
+        android:textColor="#4A7D6B"/>
+</LinearLayout>

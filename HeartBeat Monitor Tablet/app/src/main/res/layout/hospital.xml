@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+	android:background="#F3EFEA"
+	android:textColor="#4A7D6B">
+
+    <TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:text="  琛屽嫊寮忓鍊嬪績闆诲湒鍗虫檪杈ㄨ瓨銆佺洠鎺у強鐓ц绯荤当 (骞虫澘闆昏叇鐗�)"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textSize="20sp"
+	    android:gravity="center_vertical|left"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B"/>
+    
+	 <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B">
+
+	     <TextView
+	         android:id="@+id/text1"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="  鐣跺墠浣嶇疆    绶害锛�"
+	         android:gravity="center"
+	         android:textSize="26sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+	     <TextView
+	         android:id="@+id/latitude"
+	         android:layout_width="160dip"
+	         android:layout_height="wrap_content"
+	         android:text="  --  "
+	         android:gravity="center"
+	         android:textSize="26sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+	     <TextView
+	         android:id="@+id/text2"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="  缍撳害锛�"
+	         android:gravity="center"
+	         android:textSize="26sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+	     <TextView
+	         android:id="@+id/longitude"
+	         android:layout_width="160dip"
+	         android:layout_height="wrap_content"
+	         android:text="  --  "
+	         android:gravity="center"
+	         android:textSize="26sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+	     <TextView
+	         android:id="@+id/text3"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="        闄勮繎閱櫌锛�"
+	         android:gravity="center"
+	         android:textSize="26sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+	     <Spinner android:layout_weight="0" 
+	         android:layout_width="match_parent" 
+	         android:layout_height="wrap_content" 
+	         android:id="@+id/hospital_spinner">
+	         
+	     </Spinner>
+	</LinearLayout>
+	
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B"/>
+
+</LinearLayout>

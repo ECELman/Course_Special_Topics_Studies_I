@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 一定要使用相对布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3EFEA"
+    android:textColor="#4A7D6B">
+    <TextView
+       android:id="@+id/drag_list_item_text" 
+       android:layout_width="wrap_content" 
+       android:layout_height="@dimen/drag_item_normal_height"
+       android:paddingLeft="5dip"
+       android:layout_alignParentLeft="true"
+       android:layout_centerVertical="true"
+       android:textSize="20sp"
+       android:gravity="center_vertical"
+        android:background="#F3EFEA"
+        android:textColor="#4A7D6B"/>
+    <TextView
+        android:id="@+id/empty2"
+        android:layout_width="10dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="#F3EFEA"
+        android:textColor="#4A7D6B"/>
+    <ImageView android:id="@+id/drag_list_item_image"
+       android:src="@drawable/list_icon"
+       android:layout_toLeftOf="@id/empty2"
+       android:layout_centerVertical="true"
+       android:layout_width="wrap_content"
+       android:layout_height="@dimen/drag_item_normal_height"
+        android:background="#F3EFEA"
+        android:textColor="#4A7D6B"/>
+    <TextView
+        android:id="@+id/empty1"
+        android:layout_width="20dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/drag_list_item_image"
+        android:background="#F3EFEA"
+        android:textColor="#4A7D6B"/>
+    <ImageView android:id="@+id/drag_list_item_option"
+       android:src="@drawable/option_icon"
+       android:layout_toLeftOf="@id/empty1"
+       android:layout_centerVertical="true"
+       android:layout_width="wrap_content"
+       android:layout_height="@dimen/drag_item_normal_height"
+        android:background="#F3EFEA"
+        android:textColor="#4A7D6B"/>
+
+</RelativeLayout>

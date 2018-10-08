@@ -1,0 +1,41 @@
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:id="@+id/alert_relativeLayout">
+        
+        <TextView 
+            android:text=""
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_alignParentTop="true" 
+            android:layout_centerHorizontal="true" 
+            android:layout_width="match_parent" 
+            android:id="@+id/Alert_TextView1"></TextView>
+        
+        <TextView 
+            android:layout_width="match_parent" 
+            android:id="@+id/Alert_TextView2" 
+            android:layout_height="wrap_content" 
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_below="@+id/Alert_TextView1" 
+            android:layout_alignParentLeft="true"></TextView>
+        
+        <TextView 
+            android:text="" 
+            android:layout_height="wrap_content" 
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_below="@+id/Alert_TextView2" 
+            android:layout_centerHorizontal="true" 
+            android:id="@+id/Alert_TextView3" 
+            android:layout_width="match_parent"></TextView>
+        
+        <Button 
+            android:layout_width="match_parent" 
+            android:text="@string/quit_yes" 
+            android:id="@+id/Alert_Btn_ok" 
+            android:layout_height="40dp"
+            android:layout_below="@+id/Alert_TextView3" 
+            android:layout_alignParentLeft="true"></Button>
+        
+    </RelativeLayout>

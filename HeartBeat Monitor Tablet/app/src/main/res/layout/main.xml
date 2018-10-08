@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#F3EFEA"
+	android:textColor="#4A7D6B"
+    >
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:text="行動智慧健康照護系統"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textSize="20sp"
+	    android:gravity="center_vertical|left"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B"/>
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B">
+	    <heartbeat.monitor.tablet.DragListView
+	        android:id="@+id/drag_list"
+	        android:layout_width="263dp"
+	        android:layout_height="fill_parent"
+			android:cacheColorHint="#00000000"
+			android:background="#F3EFEA"
+			android:textColor="#4A7D6B"/>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical"
+			android:background="#F3EFEA"
+			android:textColor="#4A7D6B">
+	
+	        <!--上排(1, 2)-->
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:orientation="horizontal"
+				android:background="#F3EFEA"
+				android:textColor="#4A7D6B">
+	
+				<LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="vertical"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+
+				    <LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical|center"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+
+						<TextView
+						    android:id="@+id/textView1_no"
+						    android:text="1."
+						    style="@style/Number"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"/>
+
+						<TextView
+						    android:id="@+id/textView1_name"
+						    android:text="@string/no_patient"
+							style="@style/Name"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"/>
+
+						<LinearLayout
+						    style="@style/LinearLayout"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B">
+
+							<TextView
+							    android:id="@+id/textView1_connect"
+							    android:text="@string/no_connect"
+							    style="@style/Connect"
+								android:background="#F3EFEA"
+								android:textColor="#4A7D6B"/>
+
+							<TextView
+								android:id="@+id/textView1_synch"
+								style="@style/Connect"
+								android:layout_height="wrap_content"
+								android:text="@string/no_synch"
+								android:background="#F3EFEA"
+								android:textColor="#4A7D6B"/>
+
+						</LinearLayout>
+					</LinearLayout>
+
+				    <LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="@dimen/Max_Y_Axis"
+					    android:orientation="horizontal"
+					    android:gravity="center"
+						android:background="#F3EFEA"
+						android:textColor="#4A7D6B">
+					    			
+				        <heartbeat.monitor.tablet.ChartView1
+						    android:id="@+id/Chart1"
+						    android:layout_width="@dimen/Max_X_Axis"
+						    android:layout_height="@dimen/Max_Y_Axis"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"
+						    android:keepScreenOn="true"
+						    android:visibility="visible" >
+					 
+						</heartbeat.monitor.tablet.ChartView1>
+						
+					</LinearLayout>
+					
+			        <LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical|center"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+				        <TextView
+							android:id="@+id/textView1_Ihr"
+				            style="@style/Ihr"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+				            
+        				<TextView
+							android:id="@+id/textView1_Te"
+        				    style="@style/Te"
+							android:background="#F3EFEA"
+							android:textColor="#FF8800"></TextView>
+						
+        				<TextView
+							android:id="@+id/textView1_state_word"
+				            style="@style/StateWord"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+        				
+						<TextView
+							android:id="@+id/textView1_state"
+				            style="@style/State"
+							android:background="#F3EFEA"
+							android:textColor="#000088"></TextView>
+						
+			            <TextView
+							android:id="@+id/textView1_empty"
+				            style="@style/Empty"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+					</LinearLayout>
+					
+				</LinearLayout>
+				
+				<LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="vertical"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+
+				    <LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical|center"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+
+						<TextView
+						    android:id="@+id/textView2_no"
+						    android:text="2."
+						    style="@style/Number"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"/>
+
+						<TextView
+						    android:id="@+id/textView2_name"
+						    android:text="@string/no_patient"
+							style="@style/Name"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"/>
+
+						<LinearLayout
+						    style="@style/LinearLayout"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B">
+
+							<TextView
+							    android:id="@+id/textView2_connect"
+							    android:text="@string/no_connect"
+							    style="@style/Connect"
+								android:background="#F3EFEA"
+								android:textColor="#4A7D6B"/>
+
+							<TextView
+							    android:id="@+id/textView2_synch"
+							    android:text="@string/no_synch"
+							    style="@style/Connect"
+								android:background="#F3EFEA"
+								android:textColor="#4A7D6B"/>
+
+						</LinearLayout>
+					</LinearLayout>
+					
+				    <LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="@dimen/Max_Y_Axis"
+					    android:orientation="horizontal"
+					    android:gravity="center"
+						android:background="#F3EFEA"
+						android:textColor="#4A7D6B">
+					    			
+				        <heartbeat.monitor.tablet.ChartView2
+						    android:id="@+id/Chart2"
+						    android:layout_width="@dimen/Max_X_Axis"
+						    android:layout_height="@dimen/Max_Y_Axis"
+						    android:keepScreenOn="true"
+						    android:visibility="visible"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B">
+					 
+						</heartbeat.monitor.tablet.ChartView2>
+						
+					</LinearLayout>
+					
+					<LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical|center"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+				        <TextView
+							android:id="@+id/textView2_Ihr"
+				            style="@style/Ihr"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+				            
+        				<TextView
+							android:id="@+id/textView2_Te"
+        				    style="@style/Te"
+							android:background="#F3EFEA"
+							android:textColor="#FF8800"></TextView>
+						
+        				<TextView
+							android:id="@+id/textView2_state_word"
+				            style="@style/StateWord"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+        				
+						<TextView
+							android:id="@+id/textView2_state"
+				            style="@style/State"
+							android:background="#F3EFEA"
+							android:textColor="#000088"></TextView>
+						
+			            <TextView
+							android:id="@+id/textView2_empty"
+				            style="@style/Empty"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+					</LinearLayout>
+
+				</LinearLayout>	
+		    
+			</LinearLayout>
+			
+	        <!--上排(3, 4)-->	 
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:orientation="horizontal"
+				android:background="#F3EFEA"
+				android:textColor="#4A7D6B">
+	
+				<LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="vertical"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+
+				    <LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical|center"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+
+						<TextView
+						    android:id="@+id/textView3_no"
+						    android:text="3."
+						    style="@style/Number"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"/>
+
+						<TextView
+						    android:id="@+id/textView3_name"
+						    android:text="@string/no_patient"
+							style="@style/Name"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"/>
+
+						<LinearLayout
+						    style="@style/LinearLayout"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B">
+
+							<TextView
+							    android:id="@+id/textView3_connect"
+							    android:text="@string/no_connect"
+							    style="@style/Connect"
+								android:background="#F3EFEA"
+								android:textColor="#4A7D6B"/>
+
+							<TextView
+							    android:id="@+id/textView3_synch"
+							    android:text="@string/no_synch"
+							    style="@style/Connect"
+								android:background="#F3EFEA"
+								android:textColor="#4A7D6B"/>
+
+						</LinearLayout>
+					</LinearLayout>
+				
+				    <LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="@dimen/Max_Y_Axis"
+					    android:orientation="horizontal"
+					    android:gravity="center"
+						android:background="#F3EFEA"
+						android:textColor="#4A7D6B">
+					    			
+				        <heartbeat.monitor.tablet.ChartView3
+						    android:id="@+id/Chart3"
+						    android:layout_width="@dimen/Max_X_Axis"
+						    android:layout_height="@dimen/Max_Y_Axis"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"
+						    android:keepScreenOn="true"
+						    android:visibility="visible" >
+					 
+						</heartbeat.monitor.tablet.ChartView3>
+						
+					</LinearLayout>
+					
+					<LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical|center"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+				        <TextView
+							android:id="@+id/textView3_Ihr"
+				            style="@style/Ihr"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+				            
+        				<TextView
+							android:id="@+id/textView3_Te"
+        				    style="@style/Te"
+							android:background="#F3EFEA"
+							android:textColor="#FF8800"></TextView>
+						
+        				<TextView
+							android:id="@+id/textView3_state_word"
+				            style="@style/StateWord"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+        				
+						<TextView
+							android:id="@+id/textView3_state"
+				            style="@style/State"
+							android:background="#F3EFEA"
+							android:textColor="#000088"></TextView>
+						
+			            <TextView
+							android:id="@+id/textView3_empty"
+				            style="@style/Empty"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+					</LinearLayout>
+
+				</LinearLayout>
+				
+				<LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="vertical"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+	
+				    <LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical|center"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+				    
+						<TextView
+						    android:id="@+id/textView4_no"
+						    android:text="4."
+						    style="@style/Number"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"/>
+	
+						<TextView
+						    android:id="@+id/textView4_name"
+						    android:text="@string/no_patient"
+							style="@style/Name"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"/>
+						
+						<LinearLayout
+						    style="@style/LinearLayout"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B">
+						    
+							<TextView
+							    android:id="@+id/textView4_connect"
+							    android:text="@string/no_connect"
+							    style="@style/Connect"
+								android:background="#F3EFEA"
+								android:textColor="#4A7D6B"/>
+							
+							<TextView
+							    android:id="@+id/textView4_synch"
+							    android:text="@string/no_synch"
+							    style="@style/Connect"
+								android:background="#F3EFEA"
+								android:textColor="#4A7D6B"/>
+							
+						</LinearLayout>									
+					</LinearLayout>
+				
+				    <LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="@dimen/Max_Y_Axis"
+					    android:orientation="horizontal"
+					    android:gravity="center"
+						android:background="#F3EFEA"
+						android:textColor="#4A7D6B">
+					    			
+				        <heartbeat.monitor.tablet.ChartView4
+						    android:id="@+id/Chart4"
+						    android:layout_width="@dimen/Max_X_Axis"
+						    android:layout_height="@dimen/Max_Y_Axis"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"
+						    android:keepScreenOn="true"
+						    android:visibility="visible" >
+					 
+						</heartbeat.monitor.tablet.ChartView4>
+						
+					</LinearLayout>
+					
+					<LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical|center"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B">
+				        <TextView
+							android:id="@+id/textView4_Ihr"
+				            style="@style/Ihr"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+				            
+        				<TextView
+							android:id="@+id/textView4_Te"
+        				    style="@style/Te"
+							android:background="#F3EFEA"
+							android:textColor="#FF8800"></TextView>
+						
+        				<TextView
+							android:id="@+id/textView4_state_word"
+				            style="@style/StateWord"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+        				
+						<TextView
+							android:id="@+id/textView4_state"
+				            style="@style/State"
+							android:background="#F3EFEA"
+							android:textColor="#000088"></TextView>
+						
+			            <TextView
+							android:id="@+id/textView4_empty"
+				            style="@style/Empty"
+							android:background="#F3EFEA"
+							android:textColor="#4A7D6B"></TextView>
+					</LinearLayout>
+
+				</LinearLayout>		
+		    
+			</LinearLayout>
+	        
+		    <!--控制列-->
+		   	<LinearLayout
+		   	    android:layout_width="fill_parent"
+		   	    android:layout_height="75dp"
+		   	    android:orientation="horizontal"
+				android:background="#F3EFEA"
+				android:textColor="#4A7D6B" >
+
+				<Button
+					android:id="@+id/syn"
+					android:layout_width="130dp"
+					android:layout_height="40dp"
+					android:text="同步病患"
+					android:textSize="24sp"
+					android:background="@drawable/button_style"
+					android:textColor="#4A7D6B"/>
+
+				<TextView
+		   		    android:id="@+id/page"
+		   		    android:layout_width="wrap_content"
+		   		    android:layout_height="75dp"
+		   		    android:layout_weight="0.50"
+		   		    android:text="顯示頁數"
+		   		    android:textSize="24sp"
+		   		    android:textAppearance="?android:attr/textAppearanceLarge"
+		   		    android:gravity="center_vertical|center"
+					android:background="#F3EFEA"
+					android:textColor="#4A7D6B"/>
+
+				<Button
+					android:id="@+id/back"
+					android:layout_width="120dp"
+					android:layout_height="40dp"
+					android:text="@string/back"
+					android:textSize="24sp"
+					android:background="@drawable/button_style"
+					android:textColor="#4A7D6B"/>
+
+				<Button
+		   		    android:id="@+id/next"
+		   		    android:layout_width="120dp"
+		   		    android:layout_height="40dp"
+		   		    android:textSize="24sp"
+		   		    android:text="@string/next"
+					android:background="@drawable/button_style"
+					android:textColor="#4A7D6B"/>
+		    
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

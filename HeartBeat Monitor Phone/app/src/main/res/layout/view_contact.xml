@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+   android:layout_width="match_parent" 
+   android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#F3EFEA"
+    android:textColor="#4A7D6B">
+   <TableLayout android:layout_width="match_parent" 
+      android:layout_height="wrap_content"
+      android:stretchColumns="1"
+       android:layout_margin="5dp"
+       android:background="#F3EFEA"
+       android:textColor="#4A7D6B">
+      <TableRow android:id="@+id/nameTableRow"
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content"
+          android:background="#F3EFEA"
+          android:textColor="#4A7D6B">
+         <TextView android:id="@+id/nameLabelTextView" 
+            style="@style/ContactLabelTextView"
+            android:text="@string/label_name"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+         <TextView android:id="@+id/nameTextView" 
+            style="@style/ContactTextView"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+      </TableRow>
+
+      <TableRow android:id="@+id/phoneTableRow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:background="#F3EFEA"
+          android:textColor="#4A7D6B">
+         <TextView android:id="@+id/phoneLabelTextView" 
+            style="@style/ContactLabelTextView"
+            android:text="@string/label_phone"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+         <TextView android:id="@+id/phoneTextView"
+            style="@style/ContactTextView"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+      </TableRow>
+
+      <TableRow android:id="@+id/smsphoneTableRow1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:background="#F3EFEA"
+          android:textColor="#4A7D6B">
+         <TextView android:id="@+id/smsphoneLabelTextView1" 
+            style="@style/ContactLabelTextView"
+            android:text="@string/label_smsphone_1"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+         <TextView android:id="@+id/smsphoneTextView1"
+            style="@style/ContactTextView"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+      </TableRow>
+ 
+      <TableRow android:id="@+id/smsphoneTableRow2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:background="#F3EFEA"
+          android:textColor="#4A7D6B">
+         <TextView android:id="@+id/smsphoneLabelTextView2" 
+            style="@style/ContactLabelTextView"
+            android:text="@string/label_smsphone_2"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+         <TextView android:id="@+id/smsphoneTextView2"
+            style="@style/ContactTextView"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+      </TableRow>
+      
+      <TableRow android:id="@+id/smsphoneTableRow3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:background="#F3EFEA"
+          android:textColor="#4A7D6B">
+         <TextView android:id="@+id/smsphoneLabelTextView3" 
+            style="@style/ContactLabelTextView"
+            android:text="@string/label_smsphone_3"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+         <TextView android:id="@+id/smsphoneTextView3"
+            style="@style/ContactTextView"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+      </TableRow>
+      
+      <TableRow android:id="@+id/emailTableRow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:background="#F3EFEA"
+          android:textColor="#4A7D6B">
+         <TextView android:id="@+id/emailLabelTextView" 
+            style="@style/ContactLabelTextView"
+            android:text="@string/label_email"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+         <TextView android:id="@+id/emailTextView"
+            style="@style/ContactTextView"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+      </TableRow>
+
+      <TableRow android:id="@+id/addressTableRow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:background="#F3EFEA"
+          android:textColor="#4A7D6B">
+
+         <TextView
+             android:id="@+id/streetLabelTextView"
+             style="@style/ContactLabelTextView"
+             android:text="@string/label_address" 
+             android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+         <TextView android:id="@+id/addressTextView"
+            style="@style/ContactTextView"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+      </TableRow>
+
+      <TableRow android:id="@+id/noteTableRow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:background="#F3EFEA"
+          android:textColor="#4A7D6B">
+
+         <TextView
+             android:id="@+id/cityLabelTextView"
+             style="@style/ContactLabelTextView"
+             android:text="@string/label_note" 
+             android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+         <TextView android:id="@+id/noteTextView"
+            style="@style/ContactTextView"
+            android:textSize="20sp"
+             android:background="#F3EFEA"
+             android:textColor="#4A7D6B"></TextView>
+      </TableRow>
+
+      <LinearLayout
+          android:id="@+id/modify_or_delete_patient_contact"
+          android:layout_width="fill_parent"
+          android:layout_height="412dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical|center"
+          android:background="#F3EFEA"
+          android:textColor="#4A7D6B">
+         <Button
+             android:id="@+id/modify_patient_contact"
+             android:layout_weight="1"
+             android:layout_width="0dip"
+             android:layout_height="40dp"
+             android:text="修改資料"
+             android:background="@drawable/button_style"
+             android:textColor="#4A7D6B"/>
+
+         <Button
+             android:id="@+id/delete_patient_contact"
+             android:layout_weight="1"
+             android:layout_width="0dip"
+             android:layout_height="40dp"
+             android:text="刪除病患"
+             android:background="@drawable/button_style"
+             android:textColor="#4A7D6B"/>
+      </LinearLayout>
+   </TableLayout>
+</ScrollView>

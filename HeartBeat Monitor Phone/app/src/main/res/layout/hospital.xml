@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+	android:background="#F3EFEA"
+	android:textColor="#4A7D6B">
+   
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:text="當前位置"
+        android:textSize="24sp"
+        android:gravity="center_vertical"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B"/>
+    
+	 <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dip"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+		 android:background="#F3EFEA"
+		 android:textColor="#4A7D6B">
+
+	     <TextView
+			android:id="@+id/text1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="緯度："
+			android:gravity="center"
+			android:textSize="20sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+
+	     <TextView
+	         android:id="@+id/latitude"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:text="  --  "
+	         android:gravity="center"
+	         android:textSize="20sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+	     <TextView
+	         android:id="@+id/text2"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="  經度："
+	         android:gravity="center"
+	         android:textSize="20sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+	     <TextView
+	         android:id="@+id/longitude"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:text="  --  "
+	         android:gravity="center"
+	         android:textSize="20sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dip"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+		android:background="#F3EFEA"
+		android:textColor="#4A7D6B">
+	     <TextView
+	         android:id="@+id/text3"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="附近醫院："
+	         android:gravity="center"
+	         android:textSize="24sp"
+			 android:background="#F3EFEA"
+			 android:textColor="#4A7D6B"/>
+	     <Spinner android:layout_weight="0" 
+	         android:layout_width="match_parent" 
+	         android:layout_height="40dp"
+	         android:id="@+id/hospital_spinner"
+			 android:background="@drawable/button_style"
+			 android:textColor="#4A7D6B">
+	         
+	     </Spinner>
+	</LinearLayout>
+	
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

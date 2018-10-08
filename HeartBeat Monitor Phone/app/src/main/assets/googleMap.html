@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Google Maps JavaScript API v3 Example: Marker Animations</title>
+    <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      var centerPoint = new google.maps.LatLng(22.732, 120.285); 
+      var marker;
+      var map;
+      var image = 'mark.png';
+      var markersArray = [];
+      
+		function remove_mark() {
+		  if (markersArray) {
+		    for (i in markersArray) {
+		      markersArray[i].setMap(null);
+		    }
+		    markersArray.length = 0;
+		  }
+		}
+      
+      function mark(lat, log){
+        var m = new google.maps.LatLng(lat, log);
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          position: m
+        });
+        markersArray.push(marker);     
+      }
+      
+      function mark2(lat, log){
+        var m = new google.maps.LatLng(lat, log);
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          position: m,
+          icon: image
+        });
+        markersArray.push(marker);     
+      }
+
+      function initialize() {
+        var mapOptions = {
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: centerPoint
+        };
+
+        map = new google.maps.Map(document.getElementById('map_canvas'),
+                mapOptions);
+
+      }
+      
+      function centerAt(latitude, longitude){
+          myLatlng = new google.maps.LatLng(latitude,longitude);
+          map.panTo(myLatlng);
+	  mark(latitude, longitude);
+      }    
+
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas" style="width: device-width; height: 450px;">map div</div>
+  </body>
+</html>
